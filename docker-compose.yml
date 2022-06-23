@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   root:
-    container_name: mfa-app-root
+    container_name: mfa-root
     build:
       context: .
       dockerfile: Dockerfile
