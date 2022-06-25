@@ -60,6 +60,8 @@ This will start simple Nginx web servers for each micro frontend and the root co
   <summary><b>GreenFrame cannot find a browser?</b></summary>
 
   > If GreenFrame cannot find a browser when running `greenframe open`:
-  > - If you already have a browser at another location, find the GreenFrame CLI library on you computer (the default location seems to be `~/.local/lib/greenframe/`), and add the path to you browser executable in the file `src/services/detectExecutablePath.js`. The executable to Google Chrome on mac is usually: `'/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'`
+  > - If you already have a browser at another location, find the GreenFrame CLI library on you computer and add the path to you browser executable in the file `src/services/detectExecutablePath.js`.
+  >   - The default location for GreenFrame CLI seems to be `~/.local/lib/greenframe/`
+  >   - The executable to Google Chrome on mac is usually: `'/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'`
   > - Install Chromium or Google Chrome and place at the locations specified in the error message.
 </details>
