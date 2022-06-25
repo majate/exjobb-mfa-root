@@ -8,11 +8,11 @@ The code for the micro frontends can be found here:
 - [The form micro frontend](https://github.com/majate/exjobb-mfa-form)
 
 ## Installation
-1. Ensure that you have [Node](https://nodejs.org/en/) and npm installed on your system
+1. Ensure that you have [Node](https://nodejs.org/en/) and npm installed on your system.
     - The project was developed with the following versions, so try to use similar:
         - `Node v16.15.1`
         - `npm 8.12.1`
-2. Clone this repo
+2. Clone this repo.
 3. Go into the repo and execute:
 ```
 npm install
@@ -22,8 +22,7 @@ npm install
 ```
 npm start
 ```
-Runs the root configuration in the development mode at port 9000 with hot reload if you edit the code.
-Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
+Runs the root configuration in development mode at [http://localhost:9000](http://localhost:9000) with hot reload if you edit the code.
 
 The root configuration assumes that the other micro frontends are hosted at the ports defined in the import map in `src/index.ejs`.
 
@@ -52,7 +51,7 @@ This will start simple Nginx web servers for each micro frontend and the root co
 > - GreenFrame only supports MacOS and Linux (i.e., not Windows).
 
 1. Install the GreenFrame CLI and export you token as described [here](https://docs.greenframe.io/).
-2. [Start the application in docker](#run-in-production-mode)
+2. [Start the application in docker.](#run-in-production-mode)
 2. Inside `greenframe/` execute `greenframe open` to debug the scenarios.
 3. Inside `greenframe/` execute `greenframe analyze` to run the scenarios and measure energy consumption.
 
@@ -61,6 +60,6 @@ This will start simple Nginx web servers for each micro frontend and the root co
   <summary><b>GreenFrame cannot find a browser?</b></summary>
 
   > If GreenFrame cannot find a browser when running `greenframe open`:
-  > - If you already have a browser at another location, you can try to find the GreenFrame CLI library at you computer (on mac the default location is `~/.local/lib/greenframe/`), and add the path to you browser executable in `src/services/detectExecutablePath.js`. The executable to Google Chrome on mach is probably: `'/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'`
+  > - If you already have a browser at another location, find the GreenFrame CLI library on you computer (the default location seems to be `~/.local/lib/greenframe/`), and add the path to you browser executable in the file `src/services/detectExecutablePath.js`. The executable to Google Chrome on mac is usually: `'/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'`
   > - Install Chromium or Google Chrome and place at the locations specified in the error message.
 </details>
