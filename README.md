@@ -1,7 +1,7 @@
 # Exjobb MFA - Root config
 This is the root configuration for a [single-spa](https://single-spa.js.org/) micro frontend application developed for a degree project at KTH.
 
-Each micro frontends used by this application has its own repo (this repo only contains the root configuration). If you want to run the entire application, you need to install/build/run all of the micro frontends, besides the root configuration.
+Each micro frontend used by this application has its own repo (this repo only contains the root configuration). If you want to run the entire application, you need to install/build/run all of the micro frontends, besides the root configuration.
 
 The code for the micro frontends can be found here:
 - [The header micro frontend](https://github.com/majate/exjobb-mfa-header)
@@ -30,7 +30,7 @@ The root configuration assumes that the other micro frontends are hosted at the 
 ```
 npm run build
 ```
-Builds the project and places the output in `dist/`.
+Builds the root configuration and places the output in `dist/`.
 
 ## Run in production mode
 1. Ensure that you have [docker](https://www.docker.com/) installed.
