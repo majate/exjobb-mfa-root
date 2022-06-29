@@ -5,8 +5,14 @@ containers:
   - "mfa-root"
   - "mfa-form"
   - "mfa-header"
+  - "mfa-feed"
+  - "mfa-home"
 scenarios: 
-  - path: ./scenario1.js
+  - path: ./scenario_home.js
     name: S1 - load home page
-  - path: ./scenario3.js
-    name: S3 - fill in form
+  - path: ./scenario_form.js
+    name: S2 - fill in form
+  - path: ./scenario_feed.js
+    name: S3 - scroll trough feed
+  - path: ./scenario_navigate.js
+    name: S4 - navigate between subpages 
