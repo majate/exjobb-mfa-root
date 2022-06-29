@@ -5,7 +5,7 @@ async page => {
   const increaseButton = page.locator('#feed-button-increase')
   for (let i = 0; i < 3; i++) {
     await increaseButton.click()
-    await page.waitForTimeout(1000)
+    await page.waitForTimeout(500)
   }
   await page.scrollToElement('#feed-footer') // NOTE! Does not await the scroll animation
   await page.waitForTimeout(3000)
