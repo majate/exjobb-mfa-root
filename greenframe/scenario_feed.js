@@ -5,7 +5,9 @@ async page => {
   const increaseButton = page.locator('#feed-button-increase')
   for (let i = 0; i < 3; i++) {
     await increaseButton.click()
+    await page.waitForTimeout(1000)
   }
-  await page.scrollToElement('#feed-footer')
+  await page.scrollToElement('#feed-footer') // NOTE! Does not await the scroll animation
+  await page.waitForTimeout(3000)
   await page.waitForNetworkIdle() // Wait every request has been answered as a normal user.
 }
