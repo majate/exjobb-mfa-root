@@ -2,17 +2,8 @@ import { registerApplication, start } from 'single-spa'
 
 const menuItems = [
   { name: 'Form', path: '/form' },
-  { name: 'Page 2', path: '/p2' },
+  { name: 'Feed', path: '/feed' },
 ]
-
-// registerApplication({
-//   name: '@single-spa/welcome',
-//   app: () =>
-//     System.import(
-//       'https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js'
-//     ),
-//   activeWhen: location => location.pathname === '/',
-// })
 
 registerApplication({
   name: '@exjobb-mfa/header',
@@ -26,9 +17,21 @@ registerApplication({
 })
 
 registerApplication({
+  name: '@exjobb-mfa/home',
+  app: () => System.import('@exjobb-mfa/home'),
+  activeWhen: location => location.pathname === '/',
+})
+
+registerApplication({
   name: '@exjobb-mfa/form',
   app: () => System.import('@exjobb-mfa/form'),
   activeWhen: ['/form'],
+})
+
+registerApplication({
+  name: '@exjobb-mfa/feed',
+  app: () => System.import('@exjobb-mfa/feed'),
+  activeWhen: ['/feed'],
 })
 
 start({
