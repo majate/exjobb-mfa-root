@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-expressions
 async page => {
-  await page.goto('/form', { waitUntil: 'networkidle' }) // Go to the baseUrl
+  await page.goto('/form', { waitUntil: 'networkidle' }) // Go to the page and await all networking
   await page.waitForTimeout(3000) // Wait for 3 seconds
   const submitButton = page.locator('#form-button-submit')
   const resetButton = page.locator('#form-button-reset')
