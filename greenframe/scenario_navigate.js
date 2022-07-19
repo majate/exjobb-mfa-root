@@ -7,7 +7,7 @@ async page => {
     page.locator('button:has-text("Feed"):visible'),
     page.locator('a:has-text("EXJOBB"):visible'),
   ]
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     for (const link of links) {
       await link.click()
       await page.waitForTimeout(500)

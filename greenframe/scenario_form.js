@@ -7,7 +7,7 @@ async page => {
   const ageField = page.locator('#form-field-age')
   const nameField = page.locator('#form-field-username')
   const emailField = page.locator('#form-field-email')
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     await ageField.fill('89')
     await nameField.fill('user')
     await emailField.fill('email@ema.il')
