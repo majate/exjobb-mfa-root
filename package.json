@@ -9,7 +9,8 @@
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
     "build:types": "tsc",
-    "docker-compose": "docker-compose -f docker-compose.yml -p \"exjobb-mfa\" up -d --build"
+    "docker-up": "docker-compose -f docker-compose.yml -p \"exjobb-mfa\" up -d --build",
+    "docker-stop": "docker-compose -f docker-compose.yml -p \"exjobb-mfa\" stop"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
