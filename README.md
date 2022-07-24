@@ -39,10 +39,12 @@ Builds the root configuration and places the output in `dist/`.
 2. [Build](#build) the root configuration and the wanted micro frontends.
 3. Execute:
 ```
-npm run docker-compose
+npm run docker-up
 ```
 
 This will start simple Nginx web servers for each micro frontend and the root configuration in docker containers.
+
+The containers can be stopped by running `npm run docker-stop`.
 
 > **NOTE!** <br>
 > The docker configuration assumes a specific file structure of the micro frontend repos. Update the `context` properties in `docker-compose.yml` to correctly represent the relative paths to the corresponding `Dockerfile` of each micro frontend.
